@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+Welcome! Take a look at some posts below to get started.

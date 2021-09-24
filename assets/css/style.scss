@@ -1,0 +1,104 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background-color: rgb(19, 20, 24);
+  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #EAEAEA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#EAEAEA;
+}
+
+h2 {
+  color:#EAEAEA;
+}
+
+h3, h4, h5, h6 {
+  color:#EAEAEA;
+}
+
+a {
+  color:#267CB9;
+}
+
+a:hover, a:focus {
+  color:#069;
+}
+
+a small {
+  color:#777;
+}
+
+a:hover small {
+  color:#777;
+}
+
+blockquote {
+  border-left: rgb(36, 38, 42);
+}
+
+code, pre {
+  color:#6cb4a0;
+}
+
+pre {
+  background: rgb(36, 38, 42);
+  border:1px solid rgb(28, 30, 33);
+}
+
+dt {
+  color:#444;
+}
+
+th {
+  color:#444;
+}
+
+kbd {
+  background-color: #fafbfc;
+  border: #c6cbd1;
+  border-bottom-color: #959da5;
+  box-shadow: #959da5;
+  color: #444d56;
+}
+
+ul.downloads {
+  background: #f4f4f4;
+  border:1px solid #e0e0e0;
+}
+
+.downloads li {
+  border-right:1px solid #e0e0e0;
+}
+
+.downloads a {
+  color:#676767;
+}
+
+.downloads a:hover, .downloads a:focus {
+  color:#675C5C;
+}
+
+.downloads ul a:active {
+  background-color:#f0f0f0;
+}
+
+strong {
+  color:#222;
+}
+
+.downloads a strong {
+  color:#222;
+}
+
+hr {
+  background:#e5e5e5;
+}
+
+.highlight {
+  background-color: rgb(19, 20, 24);
+}
