@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tip ten Brink & Programming
+title: Tip ten Brink
 email: 75669206+tiptenbrink@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -28,11 +28,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tiptenbrink.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tiptenbrink
 github_username:  tiptenbrink
+markdown: kramdown
 
 # Build settings
-theme: minima
+remote_theme: BDHU/minimalist@v0.1.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
