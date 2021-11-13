@@ -3,30 +3,50 @@
 
 @import "{{ site.theme }}";
 
+html {
+  overflow-y: scroll;
+  font-size: 16px;
+}
+
 body {
-  background-color: rgb(19, 20, 24);
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #EAEAEA;
+  background-color: #1a1a1c;
+  font: 1rem "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #A9B7C6;
+  // Below prevents scrollbar from adjusting the width of the page
+  //padding-left: calc(100vw - 100%);
+}
+
+header h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#EAEAEA;
+  color:#A9B7C6;
 }
 
 h2 {
-  color:#EAEAEA;
+  color:#A9B7C6;
 }
 
 h3, h4, h5, h6 {
-  color:#EAEAEA;
+  color:#A9B7C6;
 }
 
 a {
-  color:#267CB9;
+  color: #cbcbd9;
+  font-weight: 600;
 }
 
 a:hover, a:focus {
-  color:#069;
+  color:#454656;
+  font-weight: 600;
 }
 
 a small {

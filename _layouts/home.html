@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
+{{content}}
 
 
-  {% if site.paginate %}
+{% if site.paginate %}
     {% assign posts = paginator.posts %}
-  {% else %}
+{% else %}
     {% assign posts = site.posts %}
-  {% endif %}
+{% endif %}
 
 
-  {%- if posts.size > 0 -%}
+{%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -56,6 +51,6 @@ layout: default
       </div>
     {%- endif %}
 
-  {%- endif -%}
+{%- endif -%}
 
-</div>
+
