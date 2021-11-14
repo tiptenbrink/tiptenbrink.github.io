@@ -44,6 +44,7 @@ From the web interface, you can easily create and remove virtual machines. I've 
 
 ### Setting up a local web server
 
+There's a multitude of ways to set up a web server. We'll be using a Docker container (specifically, [tiauth v0.1.1](https://hub.docker.com/r/tmtenbrink/tiauth)). We'll also deploy it using the accompanying deployment script. First, [install Docker](https://docs.docker.com/engine/install/ubuntu/) and [Docker Compose V2](https://docs.docker.com/compose/cli-command/). 
 
 ### Setting up a proxy VM
 
