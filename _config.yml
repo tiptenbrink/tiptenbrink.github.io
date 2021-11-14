@@ -19,15 +19,18 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Tip ten Brink
+title_1: Tip ten
+title_2: Brink
 email: 75669206+tiptenbrink@users.noreply.github.com
 description: >- # this means to ignore newlines until "baseurl:"
   My name is Tip ten Brink. I like to talk about tech, mathematics, worldbuilding and politics.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tiptenbrink.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tiptenbrink.nl" # the base hostname & protocol for your site, e.g. http://example.com
 author: "Tip ten Brink"
 twitter_username: tiptenbrink
 github_username:  tiptenbrink
 markdown: kramdown
+logo: /favicon.png
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
