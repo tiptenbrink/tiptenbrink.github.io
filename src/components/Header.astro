@@ -5,13 +5,14 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="extra-width" />
+		<h2 class="grower"><a class="logo-container" href="/"><img class="logo" src="favicon.png" alt="Logo" /><span class="title">{SITE_TITLE}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<div class="social-links">
+		<div class="social-links grower">
 			<a href="https://www.threads.net/@tip_tenbrink" target="_blank">
 				<span class="sr-only">Follow Tip on Threads</span>
 				<svg viewBox="0 0 192 192" aria-hidden="true" width="32" height="32"
@@ -40,14 +41,19 @@ import { SITE_TITLE } from '../consts';
 				>
 			</a>
 		</div>
+		<div class="extra-width" />
 	</nav>
 </header>
 <style>
+	:root {
+		--scrolbar-extra: calc(max(1rem, 100vw - 100%) + 0.75rem);
+	}
 	header {
 		margin: 0;
-		padding: 0 1em;
-		background: white;
+		/* padding: 0 1em; */
+		background: rgb(var(--gray-darkest));
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		width: 100vw;
 	}
 	h2 {
 		margin: 0;
@@ -61,24 +67,60 @@ import { SITE_TITLE } from '../consts';
 	nav {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
+		/* make sure it doesn't fill up all the space in the nav */
+		width: fit-content;
 	}
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
+	.social-links {
+		display: flex;
+		justify-content: right;
+		/* padding-right: var(--scrolbar-extra); */
+	}
 	.social-links a {
 		display: flex;
+		justify-content: right;
+		
+	}
+	.logo {
+		height: 4rem;
+		width: 4rem;
+	}
+	.logo-container {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	.logo-container:hover {
+		opacity: 80%;
+	}
+	.grower {
+		flex-grow: 1;
+		/* this ensures they all grow to the same width */
+		flex-basis: 0;
+	}
+	.extra-width {
+		width: var(--scrolbar-extra);
 	}
 	@media (max-width: 720px) {
 		.social-links {
+			display: none;
+		}
+	}
+	@media (max-width: 500px) {
+		.title {
+			display: none;
+		}
+		.extra-width {
 			display: none;
 		}
 	}
