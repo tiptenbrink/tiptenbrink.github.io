@@ -1,12 +1,16 @@
 import { defineConfig } from 'astro/config';
 import remarkMath from 'remark-math';
-import { myRemarkPlugin } from './testRemarkPlugin.mjs'
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	prefetch: {
+		prefetchAll: true
+	},
+	site: 'https://tiptenbrink.nl',
 	integrations: [],
 	markdown: {
-		remarkPlugins: [remarkMath, myRemarkPlugin]
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex]
 	}
 });
