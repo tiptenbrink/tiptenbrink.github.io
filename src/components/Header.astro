@@ -1,14 +1,14 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import icon from '../assets/icon.png'
 ---
 
 <header>
 	<nav>
 		<div class="extra-width" />
-		<h2 class="grower"><a class="logo-container" href="/"><Image src={icon} alt="Logo" width="64" height="64" quality="max" /><span class="title">{SITE_TITLE}</span></a></h2>
+		<h2 class="grower"><a class="logo-container" href="/"><Picture src={icon} alt="Logo" width="64" height="64" densities={[3]} quality="max" /><span class="title">{SITE_TITLE}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
