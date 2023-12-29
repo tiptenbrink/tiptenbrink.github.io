@@ -11,7 +11,15 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
+    "@myriaddreamin/typst-ts-renderer": "^0.4.1",
+    "@myriaddreamin/typst-ts-web-compiler": "^0.4.1",
+    "@myriaddreamin/typst.ts": "^0.4.1",
+    "@types/mdast": "^4.0.3",
     "astro": "^4.0.7",
+    "mdast-util-directive": "^3.0.0",
+    "mdast-util-math": "^3.0.0",
+    "remark-directive": "^3.0.0",
+    "remark-math": "^6.0.0",
     "typescript": "^5.3.3",
     "unist-util-visit": "^5.0.0"
   }
