@@ -8,7 +8,8 @@ import icon from '../assets/icon.png'
 <header>
 	<nav>
 		<div class="extra-width" />
-		<h2 class="grower"><a class="logo-container" href="/"><Picture src={icon} alt="Logo" width="64" height="64" densities={[3]} quality="max" /><span class="title">{SITE_TITLE}</span></a></h2>
+		<!-- We load the picture eagerly so that it's available at page load -->
+		<h2 class="grower"><a class="logo-container" href="/"><Picture loading={'eager'} src={icon} alt="Logo" width="64" height="64" densities={[3]} quality="max" /><span class="title">{SITE_TITLE}</span></a></h2>
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
